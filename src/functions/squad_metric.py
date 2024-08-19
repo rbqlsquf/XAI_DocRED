@@ -800,8 +800,9 @@ def save_file_with_evidence(all_examples, all_features, all_results, output_pred
             output["predict"] = pred_label
             output["evidence_index"] = evidence_index
             output["evidence_sentence"] = evidence_sentence
-            output["answer"] = feature.target
-            output["data_id"] = feature.qas_id
+            output["answer"] = feature.label
+            output["data_id"] = feature.data_id
+            output["evidence_sentence"] = feature.evidence_sentence
             json_result.append(output)
 
         assert len(json_result) >= 1

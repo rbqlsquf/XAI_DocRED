@@ -115,7 +115,7 @@ def squad_convert_example_to_features(
 
     spans = []
     head = example.na_triple[0]
-    tail = example.na_triple[0]
+    tail = example.na_triple[1]
     query = head + "[SEP]" + tail
     truncated_query = tokenizer.encode(query, add_special_tokens=False, max_length=max_query_length)
 
@@ -248,6 +248,7 @@ def squad_convert_example_to_features(
                 sent_mask=span["sent_mask"],
                 cur_sent_to_orig_sent=span["cur_sent_to_orig_sent"],
                 truncated_query=span["truncated_query"],
+                evidence_sentence=example.evidence,
                 data_id=example.data_id,
             )
         )
@@ -550,8 +551,8 @@ class SquadProcessor(DataProcessor):
             )
 
             examples.append(example)
-            if len(examples) >= 10:
-                break
+            # if len(examples) >= 10:
+            #     break
 
         return examples
 
@@ -637,6 +638,7 @@ class SquadFeatures(object):
         sent_mask,
         cur_sent_to_orig_sent,
         truncated_query,
+        evidence_sentence,
         data_id: str = None,
     ):
         self.input_ids = input_ids
@@ -658,6 +660,7 @@ class SquadFeatures(object):
         self.truncated_query = truncated_query
 
         self.data_id = data_id
+        self.evidence_sentence = evidence_sentence
 
 
 class SquadResult(object):
