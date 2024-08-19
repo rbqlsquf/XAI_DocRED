@@ -111,7 +111,7 @@ if __name__ == "__main__":
     # cli_parser.add_argument("--output_dir", type=str, default="./baseline0601")
 
     cli_parser.add_argument("--train_file", type=str, default="train_data.json")
-    cli_parser.add_argument("--predict_file", type=str, default="train_data.json")
+    cli_parser.add_argument("--predict_file", type=str, default="dev_data.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_distractor_v1.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_fullwiki_v1.json")
     cli_parser.add_argument("--checkpoint", type=str, default="3000")
