@@ -26,6 +26,28 @@ def batch_features(features, batch_size):
         yield features[i : i + batch_size]
 
 
+def macro_f1_score(y_true, y_pred, num_classes):
+    f1_scores = []
+
+    for i in range(num_classes):
+        # True positives, False positives, False negatives
+        tp = torch.sum((y_true == i) & (y_pred == i)).item()
+        fp = torch.sum((y_true != i) & (y_pred == i)).item()
+        fn = torch.sum((y_true == i) & (y_pred != i)).item()
+
+        # Precision and Recall
+        precision = tp / (tp + fp + 1e-8)  # Adding epsilon to avoid division by zero
+        recall = tp / (tp + fn + 1e-8)
+
+        # F1 score
+        f1 = 2 * (precision * recall) / (precision + recall + 1e-8)
+        f1_scores.append(f1)
+
+    # Macro F1 Score
+    macro_f1 = sum(f1_scores) / num_classes
+    return macro_f1
+
+
 def train(args, model, tokenizer, logger):
     # 학습에 사용하기 위한 dataset Load
     # examples, features = load_examples(args, tokenizer, evaluate=False, output_examples=True)
@@ -423,3 +445,192 @@ def evaluate(args, model, tokenizer, logger, global_step=""):
 
     #####파일 작성하는 함수만들기
     save_file_with_evidence(examples, shuffled_features_batches, all_results, output_prediction_file, tokenizer)
+
+
+# def train(args, model, tokenizer, logger):
+#     # 학습에 사용하기 위한 dataset Load
+#     # examples, features = load_examples(args, tokenizer, evaluate=False, output_examples=True)
+#     dataset, examples, features = load_examples(args, tokenizer, evaluate=False, output_examples=True)
+#     # train_sampler = RandomSampler(dataset)
+#     train_dataloader = DataLoader(dataset, shuffle=False, batch_size=args.train_batch_size)
+
+#     # #########feature 수 뽑기
+#     # shuffled_indices = list(train_sampler)
+
+#     # # Shuffle the features using the same indices
+#     # shuffled_features = [features[idx] for idx in shuffled_indices]
+#     ###########feature sampler###########################
+#     shuffled_features_batches = list(batch_features(features, args.train_batch_size))
+
+#     # optimization 최적화 schedule 을 위한 전체 training step 계산
+#     t_total = len(train_dataloader) // args.gradient_accumulation_steps * args.num_train_epochs
+
+#     # Layer에 따른 가중치 decay 적용
+#     no_decay = ["bias", "LayerNorm.weight"]
+#     optimizer_grouped_parameters = [
+#         {
+#             "params": [p for n, p in model.named_parameters() if not any(nd in n for nd in no_decay)],
+#             "weight_decay": args.weight_decay,
+#         },
+#         {"params": [p for n, p in model.named_parameters() if any(nd in n for nd in no_decay)], "weight_decay": 0.0},
+#     ]
+
+#     # optimizer 및 scheduler 선언
+#     optimizer = AdamW(optimizer_grouped_parameters, lr=args.learning_rate, eps=args.adam_epsilon)
+#     scheduler = get_linear_schedule_with_warmup(
+#         optimizer, num_warmup_steps=args.warmup_steps, num_training_steps=t_total
+#     )
+
+#     # Training Step
+#     logger.info("***** Running training *****")
+#     logger.info("  Num examples = %d", len(examples))
+#     logger.info("  Num Epochs = %d", args.num_train_epochs)
+#     logger.info("  Train batch size per GPU = %d", args.train_batch_size)
+#     logger.info(
+#         "  Total train batch size (w. parallel, distributed & accumulation) = %d",
+#         args.train_batch_size * args.gradient_accumulation_steps,
+#     )
+#     logger.info("  Gradient Accumulation steps = %d", args.gradient_accumulation_steps)
+#     logger.info("  Total optimization steps = %d", t_total)
+
+#     global_step = 1 if args.from_init_weight else int(args.checkpoint) + 1
+
+#     tr_loss, logging_loss = 0.0, 0.0
+
+#     # loss buffer 초기화
+#     model.zero_grad()
+#     # a = nn.GRU(768, 768, bidirectional=True)
+#     set_seed(args)
+#     # 하나의 example에는 10개의 문서 정보가 모두 담겨있고 10개의 feature (=features)로 분할됨
+#     # 메모리 문제때문에 실시간으로 tensor로 바꿔줌
+#     # 전처리 부분은 어차피 데이터 따라서 죄다 다시해야하는거라 중요하게 보진 않아도 됨
+#     for epoch in range(args.num_train_epochs):
+#         for step, (batch, batch_for_feature) in enumerate(zip(train_dataloader, shuffled_features_batches)):
+#             model.train()
+#             batch = tuple(t.to(args.device) for t in batch)
+#             # 모델에 입력할 입력 tensor 저장
+#             inputs = {
+#                 "input_ids": batch[0],
+#                 "attention_mask": batch[1],
+#                 "token_type_ids": batch[2],
+#                 "sent_masks": batch[3],
+#                 "answer": batch[4],
+#                 # "question_type": all_question_type
+#             }
+
+#             outputs = model(**inputs)
+#             loss, label_logits = outputs
+
+#             loss.backward()
+
+#             tr_loss += loss
+
+#             # Loss 출력
+#             if (global_step + 1) % 50 == 0:
+#                 print("{} step processed.. Current Loss : {}".format((global_step + 1), loss.item()))
+
+#             if (step + 1) % args.gradient_accumulation_steps == 0:
+#                 torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
+
+#                 optimizer.step()
+#                 scheduler.step()  # Update learning rate schedule
+#                 model.zero_grad()
+#                 global_step += 1
+
+#                 # model save
+#                 if args.logging_steps > 0 and global_step % args.logging_steps == 0:
+#                     # 모델 저장 디렉토리 생성
+#                     output_dir = os.path.join(args.output_dir, "checkpoint-{}".format(global_step))
+#                     if not os.path.exists(output_dir):
+#                         os.makedirs(output_dir)
+
+#                     # 학습된 가중치 및 vocab 저장
+#                     model.save_pretrained(output_dir)
+#                     tokenizer.save_pretrained(output_dir)
+#                     torch.save(args, os.path.join(output_dir, "training_args.bin"))
+#                     logger.info("Saving model checkpoint to %s", output_dir)
+
+#                 if args.logging_steps > 0 and global_step % args.logging_steps == 0:
+#                     # Validation Test!!
+#                     logger.info("***** Eval results *****")
+#                     evaluate(args, model, tokenizer, logger, global_step=global_step)
+
+#     return global_step, tr_loss / global_step
+
+
+# # 정답이 사전부착된 데이터로부터 평가하기 위한 함수
+# def evaluate(args, model, tokenizer, logger, global_step=""):
+#     # 데이터셋 Load
+#     dataset, examples, features = load_examples(args, tokenizer, evaluate=True, output_examples=True)
+#     test_dataloader = DataLoader(dataset, shuffle=False, batch_size=args.eval_batch_size)
+#     shuffled_features_batches = list(batch_features(features, args.eval_batch_size))
+#     # 최종 출력 파일 저장을 위한 디렉토리 생성
+#     if not os.path.exists(args.output_dir):
+#         os.makedirs(args.output_dir)
+
+#     # Eval!
+#     logger.info("***** Running evaluation {} *****".format(global_step))
+#     logger.info("  Num examples = %d", len(examples))
+#     logger.info("  Batch size = %d", args.eval_batch_size)
+
+#     # 모델 출력을 저장하기위한 리스트 선언
+#     all_results = []
+
+#     # 평가 시간 측정을 위한 time 변수
+#     start_time = timeit.default_timer()
+#     model.eval()
+#     tmp_scores = []
+#     answer_list = []
+#     pred_list = []
+#     accuracy = 0
+#     for batch_idx, (batch, batch_for_feature) in enumerate(tqdm(zip(test_dataloader, shuffled_features_batches))):
+#         # 모델을 평가 모드로 변경
+#         batch = tuple(t.to(args.device) for t in batch)
+
+#         with torch.no_grad():
+#             # 평가에 필요한 입력 데이터 저장
+#             inputs = {
+#                 "input_ids": batch[0],
+#                 "attention_mask": batch[1],
+#                 "token_type_ids": batch[2],
+#                 "sent_masks": batch[3],
+#             }
+#             # outputs = (start_logits, end_logits)
+#             # start_logits: [batch_size, max_length]
+#             # end_logits: [batch_size, max_length]
+#             outputs = model(**inputs)
+
+#             (label_logits,) = outputs
+#             optim_sample_id = 0
+
+#         batch_size = args.eval_batch_size
+#         eval_feature = batch_for_feature
+
+#         # 입력 질문에 대한 N개의 결과 저장하기위해 q_id 저장
+#         unique_id = batch[5]
+#         label_logit, pred_label = (
+#             to_list(label_logits),
+#             to_list(torch.argmax(label_logits, dim=1)),
+#         )
+#         predicted_answer = torch.argmax(label_logits, dim=1)
+
+#         answer_label = batch[4]
+#         accuracy += int(torch.sum(predicted_answer == answer_label))
+#         # q_id에 대한 예측 정답 시작/끝 위치 확률 저장
+#         result = SquadResult(unique_id, label_logit, pred_label=pred_label)
+
+#         # feature에 종속되는 최종 출력 값을 리스트에 저장
+#         all_results.append(result)
+#         answer_list.append(answer_label)
+
+#     ######################이제 파일 작성하는 거해야함
+
+#     # 평가 시간 측정을 위한 time 변수
+#     evalTime = timeit.default_timer() - start_time
+#     logger.info("  Evaluation done in total %f secs (%f sec per example)", evalTime, evalTime / len(features))
+
+#     # 최종 예측 값을 저장하기 위한 파일 생성
+#     output_prediction_file = os.path.join(args.output_dir, "predictions_{}.json".format(global_step))
+
+#     #####파일 작성하는 함수만들기
+#     save_file_with_evidence(examples, shuffled_features_batches, all_results, output_prediction_file, tokenizer)
