@@ -106,7 +106,7 @@ if __name__ == "__main__":
     # cli_parser.add_argument("--data_dir", type=str, default="./all_data")
     cli_parser.add_argument("--model_name_or_path", type=str, default="google/electra-base-discriminator")
 
-    cli_parser.add_argument("--output_dir", type=str, default="./beamsearch32")
+    cli_parser.add_argument("--output_dir", type=str, default="./cosine_32")
     # cli_parser.add_argument("--output_dir", type=str, default="./uppperbound")
     # cli_parser.add_argument("--output_dir", type=str, default="./baseline0601")
 
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     cli_parser.add_argument("--null_score_diff_threshold", type=float, default=0.0)
 
     # Running Mode
-    cli_parser.add_argument("--from_init_weight", type=bool, default=False)
+    cli_parser.add_argument("--from_init_weight", type=bool, default=True)
     cli_parser.add_argument("--add_vocab", type=bool, default=False)
     cli_parser.add_argument("--do_train", type=bool, default=True)
     cli_parser.add_argument("--do_eval", type=bool, default=True)

@@ -219,30 +219,15 @@ def train(args, model, tokenizer, logger):
             # num_sample, batch 사이즈 만큼의 listy
             pred_prob_list = [[1e-3 for _ in range(r_batch_size)] for _ in range(args.num_samples)]
             g_pred_prob_list = [[1e-3 for _ in range(r_batch_size)] for _ in range(args.num_samples)]
-            gold_list = batch[4]  # 실제 라벨링 정답 값 [batch, 1] -> one-hot으로 만들어서 뻬야함
-            gold_list = F.one_hot(gold_list, num_classes=args.num_label)  # [batch, 2] 로 변경
+            gold_labels = batch[4]  # 실제 라벨링 정답 값 [batch, 1] -> one-hot으로 만들어서 뻬야함
+            gold_list = F.one_hot(gold_labels, num_classes=args.num_label)  # [batch, 2] 로 변경
             for path in range(args.num_samples):
-                prob = predicted_answer[path]  # 사이즈가 batch, 2일 것임
-                e_prob = evidence_predicted_answer[path]
-                prob_label = torch.argmax(prob, dim=1)
-                e_prob_label = torch.argmax(e_prob, dim=1)
-                diff = prob_label != e_prob_label  # 다른 부분 찾는 코드
+                prob = F.cosine_similarity(predicted_answer[path], evidence_predicted_answer[path])
+                e_prob = F.cosine_similarity(gold_list, evidence_predicted_answer[path])
+                ###일단 best path를 찾기 위해 cosine similarity를 측정해야함
 
-                # prob : 예측과 evidence 예측, e_prob : evidence예측과 gold !!!
-                prob = abs(evidence_predicted_answer[path] - predicted_answer[path])
-                e_prob = gold_list - evidence_predicted_answer[path]
-                mased_prob = prob * gold_list
-                mased_e_prob = e_prob * gold_list
-
-                prob = mased_prob.sum(
-                    dim=1, keepdim=True
-                )  # -> 확률값들 중에서 1에 해당하는 값만 가지고온 값,  [batch, 1]
-                e_prob = mased_e_prob.sum(
-                    dim=1, keepdim=True
-                )  # -> 확률값들 중에서 1에 해당하는 값만 가지고온 값,  [batch, 1]
-
-                pred_prob_list[path] = (1 - prob).tolist()
-                g_pred_prob_list[path] = (1 - e_prob).tolist()
+                pred_prob_list[path] = prob.tolist()
+                g_pred_prob_list[path] = e_prob.tolist()
             # pred_prob_list : [path, batch, 1]
             pred_prob_list = torch.tensor(pred_prob_list, dtype=torch.float).cuda()
             g_pred_prob_list = torch.tensor(g_pred_prob_list, dtype=torch.float).cuda()
@@ -280,8 +265,11 @@ def train(args, model, tokenizer, logger):
                 # 점수가 낮은 경우 추론된 Evidence Sentence를 제외한 모든 문장의 확률을 높이도록
                 # mask : [batch, 근거문장수, 40] // negative_sampled_evidence_sentence : [batch, 1, 40]
                 # s_sampled_evidence_sentence[idx, : , :] = [batch, 근거문장, 40] -> 그렇다면 이것도 사이즈를 늘려야지
+                pred_labels = torch.argmax(predicted_answer[idx], dim=-1)
+                e_pred_labels = torch.argmax(predicted_answer[idx], dim=-1)
+
                 for batch_idx in range(len(prob)):
-                    if prob[batch_idx] < 0.5:
+                    if pred_labels[batch_idx] != e_pred_labels[batch_idx]:
                         s_sampled_evidence_sentence[idx, batch_idx, :, :] = (
                             mask[batch_idx] - negative_sampled_evidence_sentence[batch_idx]
                         )
@@ -289,7 +277,7 @@ def train(args, model, tokenizer, logger):
                         s_sampled_evidence_sentence[idx, batch_idx, :, :] = sampled_sampled_evidence_sentence[
                             batch_idx, :, :
                         ]
-                    if g_prob[batch_idx] < 0.5:
+                    if gold_labels[batch_idx] != e_pred_labels[batch_idx]:
                         g_sampled_evidence_sentence[idx, batch_idx, :, :] = (
                             mask[batch_idx] - negative_sampled_evidence_sentence[batch_idx]
                         )
@@ -324,7 +312,7 @@ def train(args, model, tokenizer, logger):
             if args.gradient_accumulation_steps > 1:
                 loss = loss / args.gradient_accumulation_steps
             if torch.mean(loss).item() > 0 and torch.mean(loss).item() < 1000:
-                loss = loss[best_path.squeeze(dim=1), column_indices]
+                loss = loss[best_path, column_indices]
                 loss.mean().backward()
             else:
                 # outputs = model(**inputs)
