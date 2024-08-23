@@ -811,32 +811,3 @@ def save_file_with_evidence(all_examples, all_features, all_results, output_pred
         with open(output_prediction_file, "w", encoding="utf8") as writer:
             json.dump(json_result, writer, indent="\t", ensure_ascii=False)
         print("file save : {}".format(output_prediction_file))
-
-
-# def save_file_with_evidence(all_examples, all_features, all_results, output_prediction_file, tokenizer):
-
-    # json_result = []
-    # batch_size = len(all_features)
-    # for k, result in enumerate(all_results):
-    #     features = all_features[k]
-
-    #     label_logits = result.label_logits
-    #     pred_labels = result.pred_labels
-
-    #     for i, feature in enumerate(features):
-    #         output = collections.OrderedDict()
-    #         label_logit = label_logits[i]
-    #         pred_label = pred_labels[i]
-    #         # 자 하나의 feature에 대해서 진행을 해보자
-
-    #         output["label_logit"] = label_logit
-    #         output["predict"] = pred_label
-    #         output["answer"] = feature.label
-    #         output["data_id"] = feature.data_id
-    #         json_result.append(output)
-    #     assert len(json_result) >= 1
-
-    # if output_prediction_file:
-    #     with open(output_prediction_file, "w", encoding="utf8") as writer:
-    #         json.dump(json_result, writer, indent="\t", ensure_ascii=False)
-    #     print("file save : {}".format(output_prediction_file))
