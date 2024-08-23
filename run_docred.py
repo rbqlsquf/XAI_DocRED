@@ -123,10 +123,6 @@ if __name__ == "__main__":
     cli_parser.add_argument("--max_answer_length", type=int, default=30)
     cli_parser.add_argument("--n_best_size", type=int, default=20)
 
-    # 한규빈이 막내인 이유가 뭡니까!
-    # 연구실 사람들은 다 00년 이전에 태어났는데 규빈이는 01입니다.
-    # 규빈이는 01입니다.
-    # 아 ㅋㅋ 그건말이죠~ 연구실 사람들은 다 00년 이전에 태어났는데 규빈이는 01입니다. 가릿?
     # Training Parameter
     cli_parser.add_argument("--learning_rate", type=float, default=5e-5)
     cli_parser.add_argument("--train_batch_size", type=int, default=8)
