@@ -108,6 +108,7 @@ def train(args, model, tokenizer, logger):
     # 전처리 부분은 어차피 데이터 따라서 죄다 다시해야하는거라 중요하게 보진 않아도 됨
     for epoch in range(args.num_train_epochs):
         i = 0
+        all_json = []
         for step, (batch, batch_for_feature) in enumerate(zip(train_dataloader, shuffled_features_batches)):
             model.train()
             batch = tuple(t.to(args.device) for t in batch)
@@ -218,18 +219,16 @@ def train(args, model, tokenizer, logger):
             ############################################여기서 부터!!!!!!!!!!!!!!!!!!!!
 
             # 지금부터 파일을 작성할거임 확률을 보기 위함
-            all_json = []
             result = {}
-            file_path = f"predict_{i}.json"
-            result["predict_logit"] = predicted_answer[0].tolist()
-            result["e_predict_logit"] = evidence_predicted_answer[0].tolist()
-            result["pred_labels"] = torch.argmax(predicted_answer[0], dim=-1).tolist()
-            result["e_pred_labels"] = torch.argmax(evidence_predicted_answer[0], dim=-1).tolist()
+            result["predict_logit"] = soft_label_logits.tolist()
+            temp_list = []
+            for evide in evidence_predicted_answer:
+                temp_list.append(evide.tolist())
+            result["e_predict_logit"] = torch.tensor(temp_list).permute(1, 2, 0).tolist()
+
+            result["answer"] = batch[4].tolist()
             i += 1
             all_json.append(result)
-            with open(file_path, "w", encoding="utf-8") as f:
-                json.dump(all_json, f, ensure_ascii=False, indent=4)
-            print("json파일 저장")
             # Evidence Path 별로 점수 측정
             ####이제 predicted_answer 와 evidence_predicted_answer를 가지고 점수 측정을 진행해야함
             # num_sample, batch 사이즈 만큼의 listy
@@ -376,6 +375,10 @@ def train(args, model, tokenizer, logger):
                     logger.info("***** Eval results *****")
                     evaluate(args, model, tokenizer, logger, global_step=global_step)
 
+        file_path = f"predict_{epoch}.json"
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(all_json, f, ensure_ascii=False, indent=4)
+        print("json파일 저장")
     return global_step, tr_loss / global_step
 
 

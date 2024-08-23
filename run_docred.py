@@ -115,7 +115,7 @@ if __name__ == "__main__":
     cli_parser.add_argument("--predict_file", type=str, default="filtered_cut_dev_data.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_distractor_v1.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_fullwiki_v1.json")
-    cli_parser.add_argument("--checkpoint", type=str, default="8000")
+    cli_parser.add_argument("--checkpoint", type=str, default="4000")
 
     # Model Hyper Parameter
     cli_parser.add_argument("--max_seq_length", type=int, default=512)
