@@ -224,6 +224,9 @@ def train(args, model, tokenizer, logger):
             for path in range(args.num_samples):
                 prob = predicted_answer[path]  # 사이즈가 batch, 2일 것임
                 e_prob = evidence_predicted_answer[path]
+                prob_label = torch.argmax(prob, dim=1)
+                e_prob_label = torch.argmax(e_prob, dim=1)
+                diff = prob_label != e_prob_label  # 다른 부분 찾는 코드
 
                 # prob : 예측과 evidence 예측, e_prob : evidence예측과 gold !!!
                 prob = abs(evidence_predicted_answer[path] - predicted_answer[path])
@@ -243,7 +246,7 @@ def train(args, model, tokenizer, logger):
             # pred_prob_list : [path, batch, 1]
             pred_prob_list = torch.tensor(pred_prob_list, dtype=torch.float).cuda()
             g_pred_prob_list = torch.tensor(g_pred_prob_list, dtype=torch.float).cuda()
-            # 가장 성능이 높은 Path 선정 -> 근데 1인 정답이랑 차이를 구했으니까 차가 가장 적은 부분으로 ㄱㄱ
+            # 가장 성능이 높은 Path 선정
             ll = to_list(pred_prob_list + g_pred_prob_list)
             ll = torch.tensor(ll, dtype=torch.float).cuda()
             best_path = torch.max(ll, dim=0).indices

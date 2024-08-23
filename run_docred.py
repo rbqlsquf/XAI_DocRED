@@ -114,7 +114,7 @@ if __name__ == "__main__":
     cli_parser.add_argument("--predict_file", type=str, default="filtered_cut_dev_data.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_distractor_v1.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_fullwiki_v1.json")
-    cli_parser.add_argument("--checkpoint", type=str, default="3000")
+    cli_parser.add_argument("--checkpoint", type=str, default="8000")
 
     # Model Hyper Parameter
     cli_parser.add_argument("--max_seq_length", type=int, default=512)
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     cli_parser.add_argument("--null_score_diff_threshold", type=float, default=0.0)
 
     # Running Mode
-    cli_parser.add_argument("--from_init_weight", type=bool, default=True)
+    cli_parser.add_argument("--from_init_weight", type=bool, default=False)
     cli_parser.add_argument("--add_vocab", type=bool, default=False)
     cli_parser.add_argument("--do_train", type=bool, default=True)
     cli_parser.add_argument("--do_eval", type=bool, default=True)
