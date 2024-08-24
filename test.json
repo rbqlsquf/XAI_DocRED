@@ -1,0 +1,1302 @@
+[
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    },
+    {
+        "data_id": 33160,
+        "response": [
+            {
+                "role": "system",
+                "content": "<Instruction>\nDetermine whether the relationship between the given <Subject> and <Object> can be inferred solely from the provided <Sentences>. The <Relationship> may not be explicitly stated, but evaluate whether the sentences alone suggest the relationship.\n\n<Score criteria>\n- 0: The sentences do not suggest the relationship at all. The sentences are neutral, irrelevant, or contradict the relationship.\n- 1: The sentences somewhat suggest the relationship but are not conclusive. The relationship is partially inferred but not clearly established.\n- 2: The sentences fully suggest the relationship. The relationship can be clearly and directly inferred from the sentences alone.\n\n<Output format>\nScore: <0, 1, or 2>\n"
+            },
+            {
+                "role": "user",
+                "content": "<Sentences>\nJohnson served in the Navy during World War II, when he was awarded the Silver Star, and ultimately reached the U.S.Naval Reserve rank of commander.\n</Sentences>\n\n<Subject>\nUSS Lyndon B. Johnson\n</Subject>\n<Object>\nNavy\n</Object>\n<Relation>\nmilitary branch\n</Relation>\n\n<Score> : "
+            }
+        ]
+    }
+]

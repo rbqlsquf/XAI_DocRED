@@ -19,7 +19,6 @@ from src.functions.squad_metric import (
     save_file_with_evidence,
 )
 from torch import nn
-import json
 
 
 def batch_features(features, batch_size):
@@ -107,8 +106,6 @@ def train(args, model, tokenizer, logger):
     # 메모리 문제때문에 실시간으로 tensor로 바꿔줌
     # 전처리 부분은 어차피 데이터 따라서 죄다 다시해야하는거라 중요하게 보진 않아도 됨
     for epoch in range(args.num_train_epochs):
-        i = 0
-        all_json = []
         for step, (batch, batch_for_feature) in enumerate(zip(train_dataloader, shuffled_features_batches)):
             model.train()
             batch = tuple(t.to(args.device) for t in batch)
@@ -217,18 +214,6 @@ def train(args, model, tokenizer, logger):
                 # end = e_end_logits[0, :, 0]
                 evidence_predicted_answer.append(label)
             ############################################여기서 부터!!!!!!!!!!!!!!!!!!!!
-
-            # 지금부터 파일을 작성할거임 확률을 보기 위함
-            result = {}
-            result["predict_logit"] = soft_label_logits[:,:,0].tolist()
-            temp_list = []
-            # for evide in evidence_predicted_answer:
-            #     temp_list.append(evide.tolist())
-            result["e_predict_logit"] = evidence_predicted_answer[0].tolist()
-
-            result["answer"] = batch[4].tolist()
-            i += 1
-            all_json.append(result)
             # Evidence Path 별로 점수 측정
             ####이제 predicted_answer 와 evidence_predicted_answer를 가지고 점수 측정을 진행해야함
             # num_sample, batch 사이즈 만큼의 listy
@@ -366,10 +351,6 @@ def train(args, model, tokenizer, logger):
                     logger.info("***** Eval results *****")
                     evaluate(args, model, tokenizer, logger, global_step=global_step)
 
-        file_path = f"predict_{epoch}.json"
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(all_json, f, ensure_ascii=False, indent=4)
-        print("json파일 저장")
     return global_step, tr_loss / global_step
 
 
