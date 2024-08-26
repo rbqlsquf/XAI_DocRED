@@ -77,7 +77,7 @@ def f1_score(prediction, ground_truth):
 
 if __name__ == "__main__":
 
-    pred_path = "predict_8000.json"
+    pred_path = "KLV_32/predictions_8000.json"
 
     gold_data = []
 
@@ -101,9 +101,9 @@ if __name__ == "__main__":
             continue
         sp_em, sp_prec, sp_recall = update_sp(metrics, pred_sp, gold_sp)
         ######틀린거 제외하고 해보기
-        if data['predict'] != data['answer']:
+        if data["predict"] != data["answer"]:
             continue
-        
+
         all_data_id.append(data["data_id"])
         all_sp_em.append(sp_em)
         all_sp_prec.append(sp_prec)
@@ -112,7 +112,7 @@ if __name__ == "__main__":
     for k in metrics.keys():
         metrics[k] /= len(all_data_id)
 
-    with open("output_sp_correct.jsonl", "w", encoding="UTF-8") as out_file:
+    with open("output_sp/output_sp_klv.jsonl", "w", encoding="UTF-8") as out_file:
         for i in range(len(all_sp_em)):
             json.dump(
                 {

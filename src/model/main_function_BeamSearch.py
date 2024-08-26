@@ -220,10 +220,11 @@ def train(args, model, tokenizer, logger):
             pred_prob_list = [[1e-3 for _ in range(r_batch_size)] for _ in range(args.num_samples)]
             g_pred_prob_list = [[1e-3 for _ in range(r_batch_size)] for _ in range(args.num_samples)]
             gold_labels = batch[4]  # 실제 라벨링 정답 값 [batch, 1] -> one-hot으로 만들어서 뻬야함
-            gold_list = F.one_hot(gold_labels, num_classes=args.num_label)  # [batch, 2] 로 변경
+            gold_list = F.one_hot(gold_labels, num_classes=args.num_label).float()  # [batch, 2] 로 변경
+            kl_loss = nn.KLDivLoss(reduction="none")
             for path in range(args.num_samples):
-                prob = F.cosine_similarity(predicted_answer[path], evidence_predicted_answer[path])
-                e_prob = F.cosine_similarity(gold_list, evidence_predicted_answer[path])
+                prob = torch.sum(kl_loss(torch.log(evidence_predicted_answer[path]), predicted_answer[path]), -1)
+                e_prob = torch.sum(kl_loss(torch.log(evidence_predicted_answer[path]), gold_list), -1)
                 ###일단 best path를 찾기 위해 cosine similarity를 측정해야함
 
                 pred_prob_list[path] = prob.tolist()
@@ -232,9 +233,11 @@ def train(args, model, tokenizer, logger):
             pred_prob_list = torch.tensor(pred_prob_list, dtype=torch.float).cuda()
             g_pred_prob_list = torch.tensor(g_pred_prob_list, dtype=torch.float).cuda()
             # 가장 성능이 높은 Path 선정
-            ll = to_list(pred_prob_list + g_pred_prob_list)
-            ll = torch.tensor(ll, dtype=torch.float).cuda()
-            best_path = torch.max(ll, dim=0).indices
+            ll = pred_prob_list + g_pred_prob_list
+            best_path = torch.argmin(ll, 0)
+
+            pred_prob_list = 1 - torch.tensor(pred_prob_list, dtype=torch.float)
+            g_pred_prob_list = 1 - torch.tensor(g_pred_prob_list, dtype=torch.float)
 
             # Evidence Path Loss 계산을 위한 Mask 생성 : [batch, max_dec_len, max_sentences]
             s_sampled_evidence_sentence = torch.zeros(
@@ -266,7 +269,7 @@ def train(args, model, tokenizer, logger):
                 # mask : [batch, 근거문장수, 40] // negative_sampled_evidence_sentence : [batch, 1, 40]
                 # s_sampled_evidence_sentence[idx, : , :] = [batch, 근거문장, 40] -> 그렇다면 이것도 사이즈를 늘려야지
                 pred_labels = torch.argmax(predicted_answer[idx], dim=-1)
-                e_pred_labels = torch.argmax(predicted_answer[idx], dim=-1)
+                e_pred_labels = torch.argmax(evidence_predicted_answer[idx], dim=-1)
 
                 for batch_idx in range(len(prob)):
                     if pred_labels[batch_idx] != e_pred_labels[batch_idx]:
@@ -296,10 +299,10 @@ def train(args, model, tokenizer, logger):
             g_evidence_nll = g_evidence_nll * g_sampled_evidence_sentence
 
             evidence_nll = torch.mean(torch.sum(evidence_nll, -1) / e_div, -1)
-            evidence_nll = evidence_nll * pred_prob_list.squeeze(dim=-1)
+            evidence_nll = evidence_nll * torch.clamp(pred_prob_list, min=1e-2).cuda()
             # evidence_nll : [path, batch]
             g_evidence_nll = torch.mean(torch.sum(g_evidence_nll, -1) / g_div, -1)
-            g_evidence_nll = g_evidence_nll * g_pred_prob_list.squeeze(dim=-1)
+            g_evidence_nll = g_evidence_nll * torch.clamp(g_pred_prob_list, min=1e-2).cuda()
 
             column_indices = torch.arange(best_path.size(0), device="cuda:0")
             # loss = loss.unsqueeze(dim=1).repeat(1, r_batch_size)
