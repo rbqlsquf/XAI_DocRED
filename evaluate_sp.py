@@ -77,7 +77,7 @@ def f1_score(prediction, ground_truth):
 
 if __name__ == "__main__":
 
-    pred_path = "KLV_32/predictions_8000.json"
+    pred_path = "cosine_32/predictions_5000.json"
 
     gold_data = []
 
@@ -94,6 +94,7 @@ if __name__ == "__main__":
     all_sp_em = []
     all_sp_prec = []
     all_sp_recall = []
+    a = 0
     for i, data in enumerate(pred_data):
         pred_sp = data["evidence_index"]
         gold_sp = data["evidence_sentence"]
@@ -102,6 +103,7 @@ if __name__ == "__main__":
         sp_em, sp_prec, sp_recall = update_sp(metrics, pred_sp, gold_sp)
         ######틀린거 제외하고 해보기
         if data["predict"] != data["answer"]:
+            a += 1
             continue
 
         all_data_id.append(data["data_id"])
@@ -126,3 +128,4 @@ if __name__ == "__main__":
             out_file.write("\n")
         json.dump(metrics, out_file)
         print(metrics)
+    print(a)

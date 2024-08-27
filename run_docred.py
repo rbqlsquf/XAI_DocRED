@@ -106,7 +106,7 @@ if __name__ == "__main__":
     # cli_parser.add_argument("--data_dir", type=str, default="./all_data")
     cli_parser.add_argument("--model_name_or_path", type=str, default="google/electra-base-discriminator")
 
-    cli_parser.add_argument("--output_dir", type=str, default="./KLV_32")
+    cli_parser.add_argument("--output_dir", type=str, default="./cosine_32")
     # cli_parser.add_argument("--output_dir", type=str, default="./uppperbound")
     # cli_parser.add_argument("--output_dir", type=str, default="./baseline0601")
 

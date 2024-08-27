@@ -223,8 +223,8 @@ def train(args, model, tokenizer, logger):
             gold_list = F.one_hot(gold_labels, num_classes=args.num_label).float()  # [batch, 2] 로 변경
             kl_loss = nn.KLDivLoss(reduction="none")
             for path in range(args.num_samples):
-                prob = torch.sum(kl_loss(torch.log(evidence_predicted_answer[path]), predicted_answer[path]), -1)
-                e_prob = torch.sum(kl_loss(torch.log(evidence_predicted_answer[path]), gold_list), -1)
+                prob = F.cosine_similarity(predicted_answer[path], evidence_predicted_answer[path])
+                e_prob = F.cosine_similarity(gold_list, evidence_predicted_answer[path])
                 ###일단 best path를 찾기 위해 cosine similarity를 측정해야함
 
                 pred_prob_list[path] = prob.tolist()
@@ -234,11 +234,8 @@ def train(args, model, tokenizer, logger):
             g_pred_prob_list = torch.tensor(g_pred_prob_list, dtype=torch.float).cuda()
             # 가장 성능이 높은 Path 선정
             ll = pred_prob_list + g_pred_prob_list
-            best_path = torch.argmin(ll, 0)
 
-            pred_prob_list = 1 - torch.tensor(pred_prob_list, dtype=torch.float)
-            g_pred_prob_list = 1 - torch.tensor(g_pred_prob_list, dtype=torch.float)
-
+            best_path = torch.argmax(ll, dim=0)
             # Evidence Path Loss 계산을 위한 Mask 생성 : [batch, max_dec_len, max_sentences]
             s_sampled_evidence_sentence = torch.zeros(
                 [args.num_samples, r_batch_size, args.max_dec_len, sampled_evidence_scores.size(-1)],
@@ -299,10 +296,10 @@ def train(args, model, tokenizer, logger):
             g_evidence_nll = g_evidence_nll * g_sampled_evidence_sentence
 
             evidence_nll = torch.mean(torch.sum(evidence_nll, -1) / e_div, -1)
-            evidence_nll = evidence_nll * torch.clamp(pred_prob_list, min=1e-2).cuda()
+            evidence_nll = evidence_nll * pred_prob_list.squeeze(dim=-1)
             # evidence_nll : [path, batch]
             g_evidence_nll = torch.mean(torch.sum(g_evidence_nll, -1) / g_div, -1)
-            g_evidence_nll = g_evidence_nll * torch.clamp(g_pred_prob_list, min=1e-2).cuda()
+            g_evidence_nll = g_evidence_nll * g_pred_prob_list.squeeze(dim=-1)
 
             column_indices = torch.arange(best_path.size(0), device="cuda:0")
             # loss = loss.unsqueeze(dim=1).repeat(1, r_batch_size)
