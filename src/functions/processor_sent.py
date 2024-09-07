@@ -551,7 +551,7 @@ class SquadProcessor(DataProcessor):
             )
 
             examples.append(example)
-            # if len(examples) >= 1000:
+            # if len(examples) >= 10:
             #     break
 
         return examples

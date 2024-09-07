@@ -77,55 +77,52 @@ def f1_score(prediction, ground_truth):
 
 if __name__ == "__main__":
 
-    for i in range(1, 22):
-        print(i)
-        pred_path = "KLD_BEAM1/predictions_{}000.json".format(i)
+    pred_path = "gpt_answer/gpt-answer_100.json"
 
-        with open(pred_path, "r", encoding="UTF8") as f2:
-            pred_data = json.load(f2)
+    with open(pred_path, "r", encoding="UTF8") as f2:
+        pred_data = json.load(f2)
 
-        metrics = {
-            "sp_em": 0,
-            "sp_f1": 0,
-            "sp_prec": 0,
-            "sp_recall": 0,
-        }
-        all_data_id = []
-        all_sp_em = []
-        all_sp_prec = []
-        all_sp_recall = []
-        a = 0
-        for i, data in enumerate(pred_data):
-            pred_sp = data["evidence_index"]
-            gold_sp = data["evidence_sentence"]
-            if len(gold_sp) == 0:
-                continue
-            sp_em, sp_prec, sp_recall = update_sp(metrics, pred_sp, gold_sp)
-            ######틀린거 제외하고 해보기
-            # if data["predict"] != data["answer"]:
-            #     a += 1
-            #     continue
+    metrics = {
+        "sp_em": 0,
+        "sp_f1": 0,
+        "sp_prec": 0,
+        "sp_recall": 0,
+    }
+    all_data_id = []
+    all_sp_em = []
+    all_sp_prec = []
+    all_sp_recall = []
+    a = 0
+    for i, data in enumerate(pred_data):
+        pred_sp = data["evidence_index"]
+        gold_sp = data["evidence_sentence"]
+        if len(gold_sp) == 0:
+            continue
+        sp_em, sp_prec, sp_recall = update_sp(metrics, pred_sp, gold_sp)
+        ######틀린거 제외하고 해보기
+        # if data["predict"] != data["answer"]:
+        #     a += 1
+        #     continue
 
-            all_data_id.append(data["data_id"])
-            all_sp_em.append(sp_em)
-            all_sp_prec.append(sp_prec)
-            all_sp_recall.append(sp_recall)
+        all_data_id.append(data["data_id"])
+        all_sp_em.append(sp_em)
+        all_sp_prec.append(sp_prec)
+        all_sp_recall.append(sp_recall)
 
-        for k in metrics.keys():
-            metrics[k] /= len(all_data_id)
+    for k in metrics.keys():
+        metrics[k] /= len(all_data_id)
 
-        # with open("output_sp/output_sp_klv.jsonl", "w", encoding="UTF-8") as out_file:
-        #     for i in range(len(all_sp_em)):
-        #         json.dump(
-        #             {
-        #                 "data_id": all_data_id[i],
-        #                 "em": all_sp_em[i],
-        #                 "sp_prec": all_sp_prec[i],
-        #                 "recall": all_sp_recall[i],
-        #             },
-        #             out_file,
-        #         )
-        #         out_file.write("\n")
-        #     json.dump(metrics, out_file)
-
+    with open("output_sp/output_gpt_only.jsonl", "w", encoding="UTF-8") as out_file:
+        for i in range(len(all_sp_em)):
+            json.dump(
+                {
+                    "data_id": all_data_id[i],
+                    "em": all_sp_em[i],
+                    "sp_prec": all_sp_prec[i],
+                    "recall": all_sp_recall[i],
+                },
+                out_file,
+            )
+            out_file.write("\n")
+        json.dump(metrics, out_file)
         print(metrics)

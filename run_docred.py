@@ -106,7 +106,7 @@ if __name__ == "__main__":
     # cli_parser.add_argument("--data_dir", type=str, default="./all_data")
     cli_parser.add_argument("--model_name_or_path", type=str, default="google/electra-base-discriminator")
 
-    cli_parser.add_argument("--output_dir", type=str, default="./cosine_32")
+    cli_parser.add_argument("--output_dir", type=str, default="./KLD_BEAM1")
     # cli_parser.add_argument("--output_dir", type=str, default="./uppperbound")
     # cli_parser.add_argument("--output_dir", type=str, default="./baseline0601")
 
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     cli_parser.add_argument("--predict_file", type=str, default="shuffled_filtered_cut_dev_data.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_distractor_v1.json")
     # cli_parser.add_argument("--predict_file", type=str, default="refine_hotpot_dev_fullwiki_v1.json")
-    cli_parser.add_argument("--checkpoint", type=str, default="8000")
+    cli_parser.add_argument("--checkpoint", type=str, default="5000")
 
     # Model Hyper Parameter
     cli_parser.add_argument("--max_seq_length", type=int, default=512)
@@ -131,10 +131,10 @@ if __name__ == "__main__":
     ####추가한 부분
     #############!!!
     ### num samples : beamsearch 수 , max_dec_len : 근거 문장 몇개 뽑을지
-    cli_parser.add_argument("--num_samples", type=int, default=3)
+    cli_parser.add_argument("--num_samples", type=int, default=1)
     cli_parser.add_argument("--max_dec_len", type=int, default=2)
     cli_parser.add_argument("--num_label", type=int, default=97)  # 라벨수
-    cli_parser.add_argument("--num_train_epochs", type=int, default=5)
+    cli_parser.add_argument("--num_train_epochs", type=int, default=20)
 
     cli_parser.add_argument("--save_steps", type=int, default=1000)
     cli_parser.add_argument("--logging_steps", type=int, default=1000)
